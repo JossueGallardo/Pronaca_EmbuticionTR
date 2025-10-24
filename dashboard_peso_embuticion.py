@@ -1044,8 +1044,8 @@ def crear_grafico_pantalla_completa_con_orden(df_peso_sauciso, codigo_actual, od
                 showline=True,
                 linecolor='black',
                 linewidth=2,
-                # Rango automático simple
-                range=[0, df_peso_sauciso['_PesoSauciso'].max() * 1.2]
+                # Autoescala - se ajusta automáticamente a los datos
+                autorange=True
             ),
             plot_bgcolor='white',
             paper_bgcolor='white',
